@@ -27,37 +27,48 @@ values. We concatenate the percentage change data into a single DataFrame.An ima
 Daily returns: We calculate the daily returns for all portfolios and create a box plot to show the 
 distribution of daily returns across the selected portfolios.
 ![Histogram](images/histogram.png)
+![Box Plot](images/box_plot.png)
+![Returns Line](images/returns_line.png)
 
 Cumulative returns: We calculate and plot the cumulative returns over time, with colours 
 indicating whether the returns were above or below the initial investment amount.
+![Cumultive Returns](images/cumulative_returns.png)
 
 Daily standard deviations: We compute the daily standard deviations of all portfolios and print 
 them, along with the rolling 21-day standard deviation for each portfolio plotted on a graph.
+![Rolling Std](images/rolling_std.png)
 
 Annualised standard deviation: We calculate the annualised standard deviation using the daily
 standard deviation and 252 trading days.
+![Std analysis](images/std_analysis.png)
 
 Correlation coefficients: We calculate the correlation coefficients between all portfolio pairs and
 visualise them with a heat-map.
+![Correlation](images/correlation.png)
 
 Beta values: We compute the beta values for the selected companies and display them in a bar
 chart, showing how much the company's stock price moves relative to the broader market
 represented by the SPY index.
+![Beta Values](images/beta.png)
+![Beta Analysis](images/beta_analysis.png)
 
 Sharpe ratios: We compute the Sharpe ratios for each portfolio, indicating the risk-adjusted
 return of each portfolio. We also compute annualised Sharpe ratios to provide a more
 meaningful comparison of portfolios over time.
+![std analysis](images/std_analysis.png)
 
 Scatter plot: Finally, we created a scatter plot to compare the daily standard 
 deviation and Sharpe ratio of each portfolio, with the size of each point 
 representing the average daily return for that portfolio. This plot can be used to 
 compare the risk and return characteristics of each portfolio and identify the best 
 investment options.
+![Sharpe Ratio](images/sharpe_ratio_plot.png)
 
 We then ran a 10 year Monte Carlo simulation on the historical data on these 
 five stocks and created a Dataframe for the output. showing the combined 
 returns over 10 years of all these stocks. This result was also depicted in a plot 
 diagram as follows: 
+![Monte Carlo](images/monte_carlo.png)
 
 A further DataFrame was created showing a summary of the statistics showing the 
 mean, medium, minimum and maximum of returns for the combined portfolio as 
