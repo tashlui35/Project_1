@@ -1,5 +1,25 @@
 # Project_1
+## Project Description
+In the world of finance and investing, making informed decisions is crucial for achieving optimal returns and managing risks. Our project explores how Python code can be utilised to analyse and evaluate a portfolio consisting of multiple stocks, as well as conduct a Monte Carlo simulation to forecast future returns. By leveraging the power of data analysis and visualisation, we created a widget that helped us gain insights into the performance, risk, and potential outcomes of the investment portfolio.
 
+## Research Questions to answer
+* Daily and cumulative returns
+* Risk analysis - Daily and annualised standard deviation
+* Rolling standard deviation
+* Correlation between stocks
+* Beta values
+* Sharpe ratios
+
+## Datasets to be used
+Alpaca API
+
+## Rough breakdown of tasks
+Isabel - Visualisation, Analysis
+Natasha - Data cleaning, Presentation
+Ram - Presentation, Readme
+Yanbo - Visualisation, Analysis
+
+## Findings and Summary
 Importing libraries: We import the necessary libraries (matplotlib, numpy, seaborn, datetime) to
 perform the analysis.
 
@@ -32,7 +52,7 @@ Getting historical data: We generate five years' worth of historical data for th
 and S&P 500 from the Alpaca API using the get_bars function of the API object. We reorganise
 the DataFrame to separate the ticker data and extract the close prices for each stock into
 separate variables. We then calculate the percentage change for each stock and drop the NaN
-values. We concatenate the percentage change data into a single DataFrame.\
+values. We concatenate the percentage change data into a single DataFrame.
 
 Daily returns: We calculate the daily returns for all portfolios and create a box plot to show the 
 distribution of daily returns across the selected portfolios.
@@ -76,19 +96,11 @@ investment options.
 
 We then ran a 10 year Monte Carlo simulation on the historical data on these 
 five stocks and created a Dataframe for the output. showing the combined 
-returns over 10 years of all these stocks. This result was also depicted in a plot 
-diagram as follows: 
-![Monte Carlo](images/monte_carlo.png)
-
-A further DataFrame was created showing a summary of the statistics showing the 
-mean, medium, minimum and maximum of returns for the combined portfolio as 
-above.
+returns over 10 years of all these stocks. 
 
 Based on an assumed initial investment of $ 10,000, a progression of the cumulative 
 returns of the portfolio was calculated. Following the summary statistics of this 
 calculation, the folliowing result is printed: 'There is a 95% chance that an initial 
 investment of $10,000 in the portfolio over the next year will end within in the range 
 of $9445.81 and $80763.57.'
-
-
-
+![Monte Carlo](images/monte_carlo.png)
