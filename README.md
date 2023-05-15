@@ -14,10 +14,13 @@ In the world of finance and investing, making informed decisions is crucial for 
 Alpaca API
 
 ## Rough breakdown of tasks
-Isabel - Visualisation, Analysis
-Natasha - Data cleaning, Presentation
+Isabel - Visualisation, Analysis, Functions
+
+Natasha - Data cleaning, Presentation, Readme
+
 Ram - Presentation, Readme
-Yanbo - Visualisation, Analysis
+
+Yanbo - Visualisation, Analysis, Openai integration
 
 ## Findings and Summary
 Importing libraries: We import the necessary libraries (matplotlib, numpy, seaborn, datetime) to
