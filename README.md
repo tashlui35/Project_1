@@ -13,6 +13,16 @@ Setting API keys and creating API object: We configure the API keys and create a
 for Alpaca. We store the Alpaca API key and secret in separate variables and utilise the REST
 function from the alpaca_trade_api library to generate the API object.
 
+
+We have created widgets for users to input a selection of up to 3 
+stocks with their weights (adding up to 1). The user needs to further input their initial 
+investment and click the button 'Submit'. 
+![Interface](images/interface.png)
+
+A brief summary of each company is included in the beginning of the output, generated using openai.
+![Openai Summary](images/openai_sumamry.png)
+
+
 Getting current closing prices: We calculate the current closing prices of the five stocks and
 the S&P 500 from the Alpaca API using the get_bars function of the API object. We then
 reorganise the DataFrame to separate the ticker data and concatenate them into a single
@@ -22,7 +32,7 @@ Getting historical data: We generate five years' worth of historical data for th
 and S&P 500 from the Alpaca API using the get_bars function of the API object. We reorganise
 the DataFrame to separate the ticker data and extract the close prices for each stock into
 separate variables. We then calculate the percentage change for each stock and drop the NaN
-values. We concatenate the percentage change data into a single DataFrame.An image of this plot is shown here:
+values. We concatenate the percentage change data into a single DataFrame.\
 
 Daily returns: We calculate the daily returns for all portfolios and create a box plot to show the 
 distribution of daily returns across the selected portfolios.
@@ -80,28 +90,5 @@ calculation, the folliowing result is printed: 'There is a 95% chance that an in
 investment of $10,000 in the portfolio over the next year will end within in the range 
 of $9445.81 and $80763.57.'
 
-Further to the above, we have created widgets for users to input a selection of upto 3 
-stocks with their weightages (adding upto 1). The user needs to further input their initial 
-investment and click the button 'Submit'. The application will output in less than a 
-minute, the following:
 
-1) A concatenated DataFrame (DF)showing the daily returns of the selected custom 
-portfolio and the individual stocks;
-
-2) The above DF in visual representation in the forms of histogram plot, density plot 
-and box plot;
-
-3) Standard Deviation of the custom portfolio is calculated and represented in a 
-rolling 21 day line plot diagram
-
-4) Further covariance and beta is also calculated for the portfolio with reference to the other stocks and SPY.
-The result is also shown in a bar chart presentation;
-
-5) Next, the sharpre ratio is calculated for the custom portfolio and the other stocks and a visualisation in
-the form of a sactter plot is presented
-
-6) Lastly the Monte Carlo simulation is run and this process outputs a range of minimum and maximum
-stock values with 95% confidence
-
-A brief summary of the company and its business is also mentioned in the output
 
