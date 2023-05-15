@@ -14,7 +14,7 @@ In the world of finance and investing, making informed decisions is crucial for 
 Alpaca API
 
 ## Rough breakdown of tasks
-Isabel - Visualisation, Analysis, Functions
+Isabel - Visualisation, Analysis, Functions, Presentation
 
 Natasha - Data cleaning, Presentation, Readme
 
@@ -22,7 +22,7 @@ Ram - Presentation, Readme
 
 Yanbo - Visualisation, Analysis, Openai integration
 
-## Findings and Summary
+## Summary
 Importing libraries: We import the necessary libraries (matplotlib, numpy, seaborn, datetime) to
 perform the analysis.
 
@@ -107,3 +107,6 @@ calculation, the folliowing result is printed: 'There is a 95% chance that an in
 investment of $10,000 in the portfolio over the next year will end within in the range 
 of $9445.81 and $80763.57.'
 ![Monte Carlo](images/monte_carlo.png)
+
+## Summary of analysis
+Once our data was printed - our app generated the following response. The standard deviation analysis reveals the relative riskiness of different investments. JPM, MSFT, and RIO exhibit higher annualised standard deviations compared to the S&P 500 index, indicating their higher risk levels. Similarly, the custom portfolio carries more risk than the market. Moving on to the beta values, JPM and MSFT are found to be more volatile than the overall market, as their beta values are greater than 1. In contrast, RIO demonstrates lower volatility than the market, with a beta value of 0.93. The custom portfolio also exhibits higher volatility than the overall market. Looking at the Monte Carlo simulation results, there is a 95% probability that an initial investment of $10,000 in the portfolio over the next year will end up within the range of $10,615.93 and $106,309.50. These findings provide insights into the risk levels and potential returns associated with these investments.
