@@ -20,7 +20,7 @@ investment and click the button 'Submit'.
 ![Interface](images/interface.png)
 
 A brief summary of each company is included in the beginning of the output, generated using openai.
-![Openai Summary](images/openai_sumamry.png)
+![Openai Summary](images/openai_summary.png)
 
 
 Getting current closing prices: We calculate the current closing prices of the five stocks and
